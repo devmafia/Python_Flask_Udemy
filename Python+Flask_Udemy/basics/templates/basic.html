@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome to the site!</title>
+  </head>
+  <body>
+    <h1>Welcome to the site! {{my_var}}</h1>
+    <h2>Here is a pic of a puppy!</h2>
+    <img src="../static/mat-reding.jpg" alt="">
+    <ul>
+      {% for number in my_var %}
+      <li>{{number}}</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>

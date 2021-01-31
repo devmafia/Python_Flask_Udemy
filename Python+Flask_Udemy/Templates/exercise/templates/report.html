@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Let's see how you performed!</h1>
+<ul>
+  {% if not upper %}
+      <h1>You do not have an uppercase letter</h1>
+  {% endif %}
+  {% if not lower %}
+      <h1>You do not have a lowercase letter</h1>
+  {% endif %}
+  {% if not num_end %}
+      <h1>You do not have a digit number</h1>
+  {% endif %}
+</ul>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<p>Welcome to Puppy User Name Check</p>
+<p>Let's see if your Username is secure!</p>
+<p>Fill out the form below with a username that has these restraints:</p>
+<ul>
+  <li>Must have an uppercase letter somewhere.</li>
+  <li>Must have a lower case letter somewhere.</li>
+  <li>Must have a number at the end.</li>
+</ul>
+<form action="/report" method="GET">
+  <label for="name">Enter your name: </label>
+  <input type="text" name="name">
+  <input type="submit" value="Submit">
+</form>
+{% endblock %}
